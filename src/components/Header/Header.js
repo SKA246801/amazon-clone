@@ -6,7 +6,7 @@ import * as ImIcons from 'react-icons/im'
 function Header() {
     return (
         <div className='header'>
-            <img src={require(`../../assets/img/amazon-logo.png`).default} className='logo'/>
+            <img src={require(`../../assets/img/amazon-logo.png`).default} className='logo' alt='logo'/>
             <div className='search'>
                 <input className='search-input' type='text' />
                 <AiIcons.AiOutlineSearch className='search-icon'/>
