@@ -2,11 +2,14 @@ import React from 'react'
 import './Header.css'
 import * as AiIcons from 'react-icons/ai'
 import * as ImIcons from 'react-icons/im'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
         <div className='header'>
-            <img src={require(`../../assets/img/amazon-logo.png`).default} className='logo' alt='logo'/>
+            <Link to='/'>
+                <img src={require(`../../assets/img/amazon-logo.png`).default} className='logo' alt='logo'/>
+            </Link>
             <div className='search'>
                 <input className='search-input' type='text' />
                 <AiIcons.AiOutlineSearch className='search-icon'/>
@@ -25,7 +28,9 @@ function Header() {
                     <span className='option-line-two'>Prime</span>
                 </div>
                 <div className='basket'>
-                    <ImIcons.ImCart />
+                    <Link to='/checkout'>
+                        <ImIcons.ImCart style={{ color:'white' }}/>
+                    </Link>
                     <span className='option-line-two basket-count'>0</span>
                 </div>
             </nav>
