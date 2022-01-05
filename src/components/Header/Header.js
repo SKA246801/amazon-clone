@@ -4,9 +4,16 @@ import * as AiIcons from 'react-icons/ai'
 import * as ImIcons from 'react-icons/im'
 import { Link } from 'react-router-dom'
 import { useStateValue } from '../../utils/StateProvider'
+import { auth } from '../../firebase'
 
 function Header() {
     const [state, dispatch] = useStateValue()
+
+    const handleAuthentication = () => {
+        if (state.user) {
+            auth.signOut()
+        }
+    }
     
     return (
         <div className='header'>
@@ -18,10 +25,10 @@ function Header() {
                 <AiIcons.AiOutlineSearch className='search-icon'/>
             </div>
             <nav className='nav'>
-                <Link to='/login'>
-                    <div className='nav-option'>
+                <Link to={!state.user && '/login'}>
+                    <div onClick={handleAuthentication} className='nav-option'>
                         <span className='option-line-one'>Hello Guest</span>
-                        <span className='option-line-two'>Sign In</span>
+                        <span className='option-line-two'>{state.user ? 'Sign Out' : 'Sign In'}</span>
                     </div>
                 </Link>
                 <div className='nav-option'>
