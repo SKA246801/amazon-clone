@@ -12,7 +12,7 @@ function Product({ id, title, image, price, rating }) {
             item: {
                 id: id,
                 title: title,
-                image: `../../assets/img/${image}`,
+                image: image,
                 price: price,
                 rating: rating
             }

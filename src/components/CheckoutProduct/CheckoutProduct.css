@@ -1,10 +1,3 @@
-.checkout-img {
-    margin: 10px;
-    background-color: black;
-    width: 10%;
-    height: 45%
-}
-
 .checkout-product {
     display: flex;
     margin: 20px 0;

@@ -17,7 +17,6 @@ function CheckoutProduct({ id, image, title, price, rating}) {
     return (
         <div className='checkout-product'>
             {/* <img src={require(`../../assets/img/${image}`).default} alt='' className='checkout-img' /> */}
-            <div className='checkout-img'>some words</div>
             <div className='info'>
                 <p className='title'>{title}</p>
                 <p className='price'>
