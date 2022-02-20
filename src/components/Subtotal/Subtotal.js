@@ -12,7 +12,7 @@ function Subtotal() {
   return (
     <div className="subtotal">
       <CurrencyFormat
-        renderText={(value) => (
+        renderText={value => (
           <>
             {state ? (
               <p>
