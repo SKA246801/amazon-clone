@@ -27,7 +27,7 @@ function Header() {
             <nav className='nav'>
                 <Link to={!state?.user && '/login'}>
                     <div onClick={handleAuthentication} className='nav-option'>
-                        <span className='option-line-one'>Hello Guest</span>
+                        <span className='option-line-one'>{state?.user ? `Hello ${state.user.email}` : 'Hello Guest' }</span>
                         <span className='option-line-two'>{state?.user ? 'Sign Out' : 'Sign In'}</span>
                     </div>
                 </Link>
