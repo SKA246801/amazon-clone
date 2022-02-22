@@ -18,7 +18,7 @@ function Header() {
     return (
         <div className='header'>
             <Link to='/'>
-                <img src={require(`../../assets/img/amazon-logo.png`).default} className='logo' alt='logo'/>
+                <img src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' className='logo' alt='logo'/>
             </Link>
             <div className='search'>
                 <input className='search-input' type='text' />
@@ -31,10 +31,12 @@ function Header() {
                         <span className='option-line-two'>{state?.user ? 'Sign Out' : 'Sign In'}</span>
                     </div>
                 </Link>
-                <div className='nav-option'>
-                    <span className='option-line-one'>Returns</span>
-                    <span className='option-line-two'>& Orders</span>
-                </div>
+                <Link to='/orders'>
+                    <div className='nav-option'>
+                        <span className='option-line-one'>Returns</span>
+                        <span className='option-line-two'>& Orders</span>
+                    </div>
+                </Link>
                 <div className='nav-option'>
                     <span className='option-line-one'>Your</span>
                     <span className='option-line-two'>Prime</span>

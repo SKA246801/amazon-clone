@@ -36,9 +36,6 @@ function Payment() {
         getClientSecret()
     }, [state?.basket])
 
-
-    console.log('The secret is >>>>', clientSecret)
-
     const handleSubmit = async e => {
         e.preventDefault()
         setProcessing(true)
@@ -49,7 +46,7 @@ function Payment() {
             }
         }).then(({ paymentIntent }) => {
 
-            db.collection('users').doc(state?.user?. id).collection('orders').doc(paymentIntent.id).set({
+            db.collection('users').doc(state?.user?.uid).collection('orders').doc(paymentIntent.id).set({
                 basket: state.basket,
                 amount: paymentIntent.amount,
                 created: paymentIntent.created

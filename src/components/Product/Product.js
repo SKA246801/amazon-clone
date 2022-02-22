@@ -31,7 +31,7 @@ function Product({ id, title, image, price, rating }) {
                     {Array(rating).fill().map((_, i) => (<p>⭐</p>))}
                 </div>
             </div>
-            <img className='product-img' src={require(`../../assets/img/${image}`).default} alt=''/>
+            <img className='product-img' src={image} alt=''/>
             <button onClick={addToBasket} className='basket-btn'>Add to Basket</button>
         </div>
     )

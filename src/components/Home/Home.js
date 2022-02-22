@@ -17,7 +17,7 @@ function Home() {
                     <Product id='65992' title='Samsung Galaxy Book Pro 360' price={1199.99} image='galaxy-book.jpg' rating={5} />
                 </div>
                 <div className='home-row'>
-                    <Product id='12545' title='Samsung 49" QLED Gaming Monitor' price={899.99} image='monitor.jpg' rating={3} />
+                    <Product id='12545' title='Samsung 49" QLED Gaming Monitor' price={899.99} image='https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg' rating={3} />
                 </div>
             </div>
         </div>
