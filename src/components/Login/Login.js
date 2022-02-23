@@ -35,7 +35,7 @@ function Login() {
     return (
         <div className='login'>
             <Link to='/'>
-            <img src={require(`../../assets/img/login-logo.png`).default} className='login-logo'/>
+            <img src={require('../../assets/img/login-logo.jpg')} className='login-logo'/>
             </Link>
             <div className='login-container'>
                 <h1>Sign in</h1>

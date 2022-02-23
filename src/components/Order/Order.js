@@ -5,7 +5,6 @@ import CheckoutProduct from '../CheckoutProduct/CheckoutProduct'
 import CurrencyFormat from 'react-currency-format'
 
 function Order({ order }) {
-    console.log('THis is the order', order)
   return (
     <div className='order'>
         <h2>Order</h2>
@@ -15,7 +14,7 @@ function Order({ order }) {
             <CheckoutProduct 
             id={item.id}
             title={item.title}
-            // image={item.image}
+            image={item.image}
             price={item.price}
             rating={item.rating}
             hideButton

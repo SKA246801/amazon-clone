@@ -18,7 +18,7 @@ function Header() {
     return (
         <div className='header'>
             <Link to='/'>
-                <img src='http://pngimg.com/uploads/amazon/amazon_PNG11.png' className='logo' alt='logo'/>
+                <img src={require('../../assets/img/amazon-logo.jpg')} className='logo' alt='logo'/>
             </Link>
             <div className='search'>
                 <input className='search-input' type='text' />

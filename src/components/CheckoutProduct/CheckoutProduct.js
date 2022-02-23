@@ -16,7 +16,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
 
     return (
         <div className='checkout-product'>
-            {/* <img src={require(`../../assets/img/${image}`).default} alt='' className='checkout-img' /> */}
+            <img src={require(`../../assets/img/${image}`)} alt='' className='checkout-img' />
             <div className='info'>
                 <p className='title'>{title}</p>
                 <p className='price'>

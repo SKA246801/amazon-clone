@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className='home'>
             <div className='home-container'>
-                <img className='background-img' src='https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg' alt='amazon prime background'/>
+                <img className='background-img' src={require('../../assets/img/Prime.jpg')} alt='amazon prime background'/>
                 <div className='home-row'>
                     <Product id='58762' title='Samsung Galaxy S21 5G 128GB in White (Unlocked)' price={799.99} image='galaxy.jpg' rating={5} />
                     <Product id='12548' title='Samsung Galaxy Buds Live, Mystic Black' price={169.99} image='galaxy-buds.jpg' rating={4} />
@@ -17,7 +17,7 @@ function Home() {
                     <Product id='65992' title='Samsung Galaxy Book Pro 360' price={1199.99} image='galaxy-book.jpg' rating={5} />
                 </div>
                 <div className='home-row'>
-                    <Product id='12545' title='Samsung 49" QLED Gaming Monitor' price={899.99} image='https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg' rating={3} />
+                    <Product id='12545' title='Samsung 49" QLED Gaming Monitor' price={899.99} image='monitor.jpg' rating={3} />
                 </div>
             </div>
         </div>

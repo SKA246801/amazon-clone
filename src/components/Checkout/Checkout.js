@@ -9,7 +9,7 @@ function Checkout() {
     return (
         <div className='checkout'>
             <div className='left'>
-                <img className='checkout-ad' src='https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jp' alt='ad' />
+                <img className='checkout-ad' src={require('../../assets/img/Checkout-ad.jpg')} alt='ad' />
                 <div>
                     <h2 className='title'>Your Shopping Basket</h2>
                     {state ? (
@@ -20,6 +20,7 @@ function Checkout() {
                          image={item.image}
                          price={item.price}
                          rating={item.rating}
+                         image={item.image}
                          />
                      ))
                     ) : (
