@@ -5,6 +5,7 @@ import { useStateValue } from '../../utils/StateProvider'
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
 
     const [state , dispatch] = useStateValue()
+    console.log(image, title)
 
 
     const removeFromBasket = () => {

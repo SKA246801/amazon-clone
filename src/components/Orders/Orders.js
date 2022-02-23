@@ -26,6 +26,9 @@ function Orders() {
   return (
     <div className='orders'>
         <h1>Your Orders</h1>
+        {!state.user && (
+          <p>Sign in to save orders that you place and see them here</p>
+        )}
         <div className='order-container'>
           {orders?.map(order => (
             <Order order={order} />
